@@ -1,0 +1,11 @@
+Brain_Bodyweight <- readRDS('D:/Documents/R/Trainingdata/data/Brain_Bodyweight.rds')
+plot(Brain_Bodyweight$Body.weight..kg., Brain_Bodyweight$Brain.weight..g., main = 'Scatter of Brain vs Body-weight')
+#simple scatter-plot of unmodified values, not very useful therefore, using the logged data is preferable
+Brain_Bodyweight <- Brain_Bodyweight[order(Brain_Bodyweight$Log.body.weight..kg.),]
+#orders the data-frame by body-weight ascending
+plot(x = Brain_Bodyweight$log.brain, y = Brain_Bodyweight$log.body, type = 'l', col= 'red', lwd=2, xlab = 'Log brain-weight', ylab = 'Log body-weight')
+#line showing correlation between logged brain and body weight
+points(x = Brain_Bodyweight$log.brain, y = Brain_Bodyweight$log.body, col = 'black', pch = 16)
+#adds the points of each animals values
+text(Brain_Bodyweight$log.brain, Brain_Bodyweight$log.body, labels = Brain_Bodyweight$Species, cex = 0.6, pos = 1)
+#adds the species name to each point
