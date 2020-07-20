@@ -1,0 +1,33 @@
+\name{Biochemical_Oxygen_Demand}
+\alias{Biochemical_Oxygen_Demand}
+\docType{data}
+\title{
+Biochemical_Oxygen_Demand
+}
+\description{
+Data set of time against oxygen usage for underwater microbes from water purity tests
+}
+\usage{data("Biochemical_Oxygen_Demand")}
+\format{
+  A data frame with 0 observations on the following 2 variables.
+  \describe{
+    \item{\code{Time}}{a numeric vector}
+    \item{\code{Demand}}{a numeric vector}
+  }
+}
+\details{
+Time: Records the passage of time for the experiment
+
+Demand: The oxygen usage recorded as lost from the water
+}
+\source{
+Marske (1967), Biochemical Oxygen Demand Data Interpretation Using Sum of Squares Surface M.Sc. Thesis, University of Wisconsin – Madison.
+}
+\references{
+%%  ~~ possibly secondary sources and usages ~~
+}
+\examples{
+data(Biochemical_Oxygen_Demand)
+## maybe str(Biochemical_Oxygen_Demand) ; plot(Biochemical_Oxygen_Demand) ...
+}
+\keyword{datasets}

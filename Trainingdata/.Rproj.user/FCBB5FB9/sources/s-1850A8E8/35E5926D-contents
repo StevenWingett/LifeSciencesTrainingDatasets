@@ -1,0 +1,32 @@
+\name{Brain_Bodyweight}
+\alias{Brain_Bodyweight}
+\docType{data}
+\title{
+Brain_Bodyweight
+}
+\description{
+Brain and Bodyweight values of a number of animals, domestic and wild, looking for correlation
+
+}
+\usage{data("Brain_Bodyweight")}
+\format{
+  A data frame with 0 observations on the following 2 variables.
+  \describe{
+    \item{\code{x}}{a numeric vector}
+    \item{\code{y}}{a numeric vector}
+  }
+}
+\details{
+%%  ~~ If necessary, more details than the __description__ above ~~
+}
+\source{
+%%  ~~ reference to a publication or URL from which the data were obtained ~~
+}
+\references{
+%%  ~~ possibly secondary sources and usages ~~
+}
+\examples{
+data(Brain_Bodyweight)
+## maybe str(Brain_Bodyweight) ; plot(Brain_Bodyweight) ...
+}
+\keyword{datasets}

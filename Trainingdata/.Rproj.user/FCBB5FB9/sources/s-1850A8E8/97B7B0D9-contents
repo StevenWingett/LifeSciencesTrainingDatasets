@@ -1,0 +1,31 @@
+\name{Sleep_Deprivation_CSD}
+\alias{Sleep_Deprivation_CSD}
+\docType{data}
+\title{
+Sleep_Deprivation_CSD
+}
+\description{
+Cortical Speading Depolarising is thought to be the cause of migraines, rats were sleep deprived and their brains tested for potential difference to see if sleep loss makes migraines occur more often
+}
+\usage{data("Sleep_Deprivation_CSD")}
+\format{
+  A data frame with 0 observations on the following 2 variables.
+  \describe{
+    \item{\code{x}}{a numeric vector}
+    \item{\code{y}}{a numeric vector}
+  }
+}
+\details{
+%%  ~~ If necessary, more details than the __description__ above ~~
+}
+\source{
+https://doi.org/10.1186/s10194-020-01155-w
+}
+\references{
+%%  ~~ possibly secondary sources and usages ~~
+}
+\examples{
+data(Sleep_Deprivation_CSD)
+## maybe str(Sleep_Deprivation_CSD) ; plot(Sleep_Deprivation_CSD) ...
+}
+\keyword{datasets}

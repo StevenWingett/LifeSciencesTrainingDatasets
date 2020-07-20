@@ -1,0 +1,4 @@
+Sleep_Deprivation_CSD <- readRDS('D:/Documents/R/Trainingdata/data/Sleep_Deprivation_CSD.rds')
+#reads the stored .rds file into a data frame in the global environment
+barplot(Sleep_Deprivation_CSD$Mean.CSD.Threshold, names.arg = Sleep_Deprivation_CSD$Group, cex.names = 1)
+#Plots the CSD threshold means split into the deprivation groups

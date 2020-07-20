@@ -1,0 +1,31 @@
+\name{Cuttlefish_Buoyancy}
+\alias{Cuttlefish_Buoyancy}
+\docType{data}
+\title{
+Cuttlefish_Buoyancy
+}
+\description{
+Experiment to test ocean acidification and feeding on cuttlefish buoyancy
+}
+\usage{data("Cuttlefish_Buoyancy")}
+\format{
+  A data frame with 0 observations on the following 2 variables.
+  \describe{
+    \item{\code{x}}{a numeric vector}
+    \item{\code{y}}{a numeric vector}
+  }
+}
+\details{
+%%  ~~ If necessary, more details than the __description__ above ~~
+}
+\source{
+https://doi.org/10.3390/biology9070147
+}
+\references{
+%%  ~~ possibly secondary sources and usages ~~
+}
+\examples{
+data(Cuttlefish_Buoyancy)
+## maybe str(Cuttlefish_Buoyancy) ; plot(Cuttlefish_Buoyancy) ...
+}
+\keyword{datasets}
