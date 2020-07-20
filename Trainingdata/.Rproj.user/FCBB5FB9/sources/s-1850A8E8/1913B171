@@ -1,0 +1,24 @@
+{
+    "id": "1913B171",
+    "path": "~/R/Trainingdata/R/Brain_Bodyweight_Script.R",
+    "project_path": "R/Brain_Bodyweight_Script.R",
+    "type": "r_source",
+    "hash": "2614998201",
+    "contents": "",
+    "dirty": false,
+    "created": 1595257058890.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "cursorPosition": "1,29",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1595257074,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1595257074388,
+    "read_only": false,
+    "read_only_alternatives": []
+}

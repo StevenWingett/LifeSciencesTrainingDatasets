@@ -1,0 +1,24 @@
+{
+    "id": "00FD7C48",
+    "path": "~/R/Trainingdata/R/Sleep_Deprivation_Script.R",
+    "project_path": "R/Sleep_Deprivation_Script.R",
+    "type": "r_source",
+    "hash": "1512936742",
+    "contents": "",
+    "dirty": false,
+    "created": 1595257194767.0,
+    "source_on_save": false,
+    "relative_order": 14,
+    "properties": {
+        "cursorPosition": "1,34",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1595257206,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1595257206876,
+    "read_only": false,
+    "read_only_alternatives": []
+}

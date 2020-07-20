@@ -1,0 +1,24 @@
+{
+    "id": "4ADCC325",
+    "path": "~/R/Trainingdata/R/Cuttlefish_Buoyancy_Script.R",
+    "project_path": "R/Cuttlefish_Buoyancy_Script.R",
+    "type": "r_source",
+    "hash": "1012690",
+    "contents": "",
+    "dirty": false,
+    "created": 1595257126874.0,
+    "source_on_save": false,
+    "relative_order": 10,
+    "properties": {
+        "cursorPosition": "1,32",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1595257139,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1595257139396,
+    "read_only": false,
+    "read_only_alternatives": []
+}

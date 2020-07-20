@@ -1,0 +1,25 @@
+{
+    "id": "AA67A4F7",
+    "path": "~/R/Trainingdata/R/Neutrophils_Script.R",
+    "project_path": "R/Neutrophils_Script.R",
+    "type": "r_source",
+    "hash": "89732221",
+    "contents": "",
+    "dirty": false,
+    "created": 1595257168735.0,
+    "source_on_save": false,
+    "relative_order": 12,
+    "properties": {
+        "cursorPosition": "1,24",
+        "scrollLine": "0",
+        "ignored_words": "boxplot\n"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1595257177,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1595257177432,
+    "read_only": false,
+    "read_only_alternatives": []
+}

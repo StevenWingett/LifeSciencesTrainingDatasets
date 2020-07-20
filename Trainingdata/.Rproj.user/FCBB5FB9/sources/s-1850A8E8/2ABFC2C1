@@ -1,0 +1,24 @@
+{
+    "id": "2ABFC2C1",
+    "path": "~/R/Trainingdata/R/Plant_CO2_Uptake_Script.R",
+    "project_path": "R/Plant_CO2_Uptake_Script.R",
+    "type": "r_source",
+    "hash": "2074487545",
+    "contents": "",
+    "dirty": false,
+    "created": 1595257181398.0,
+    "source_on_save": false,
+    "relative_order": 13,
+    "properties": {
+        "cursorPosition": "1,30",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1595257193,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1595257193374,
+    "read_only": false,
+    "read_only_alternatives": []
+}
