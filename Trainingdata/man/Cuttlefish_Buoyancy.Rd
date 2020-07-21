@@ -11,25 +11,25 @@ Experiment to test ocean acidification and feeding on cuttlefish buoyancy
 \format{
   Data has following columns
   \describe{
-  \item{\code{Tank}}{string naming tank}
-    \item{\code{Colour}}{string recording colour}
-    \item{\code{Label}}{string of cuttlefish regarding feeding}
+  \item{\code{tank}}{string naming tank}
+    \item{\code{colour}}{string recording colour}
+    \item{\code{label}}{string of cuttlefish regarding feeding}
     \item{\code{ID}}{a string of fish ID}
-    \item{\code{Treatment}}{a string recording treatment type}
+    \item{\code{treatment}}{a string recording treatment type}
     \item{\code{hatching
 }}{numeric vector of hatched or not}
-    \item{\code{Hatching_Date}}{a numeric vector measuring hatched or no}
-    \item{\code{Days_Until_Hatching_trt}}{numeric vector}
-    \item{\code{Sampling_Date}}{string of date}
-    \item{\code{Floating
+    \item{\code{hatching_Date}}{a numeric vector measuring hatched or no}
+    \item{\code{days_Until_Hatching_trt}}{numeric vector}
+    \item{\code{sampling_Date}}{string of date}
+    \item{\code{floating
 }}{a numeric vector of floating or not}
-    \item{\code{Feeding
+    \item{\code{feeding
 }}{a numeric vector of feeding or not}
-    \item{\code{Weight
+    \item{\code{weight
 }}{a numeric vector of cuttlefish weight}
-    \item{\code{Area
+    \item{\code{area
 }}{a numeric vector of fish area}
-    \item{\code{Density
+    \item{\code{density
 }}{a numeric vector fish area}
   }
 }

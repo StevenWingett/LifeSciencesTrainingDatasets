@@ -9,7 +9,7 @@ Comparison of species and heat treatment of CO2 concentration and uptake by plan
 }
 \usage{data("Plant_CO2_Uptake")}
 \format{
-  A data frame with 0 observations on the following 2 variables.
+  A data frame with the following columns
   \describe{
     \item{\code{Plant}}{an ordered factor with levels Qn1 < Qn2 < Qn3 < ... < Mc1 giving a unique identifier for each plant.}
     \item{\code{Type}}{a factor with levels Quebec Mississippi giving the origin of the plant}

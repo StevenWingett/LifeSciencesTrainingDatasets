@@ -1,13 +1,13 @@
-\name{Data_Record}
-\alias{Data_Record}
+\name{Training_Data_List}
+\alias{Training_Data_List}
 \docType{data}
 \title{
-Data_Record
+Training_Data_List
 }
 \description{
 Collection of all used data sets and a description of what they contain and the data processing used on them
 }
-\usage{data("Data_Record")}
+\usage{data("Training_Data_List")}
 \format{
   Data set consists of the following columns
   \describe{
@@ -32,7 +32,7 @@ Collection of all used data sets and a description of what they contain and the 
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
-data(Data_Record)
-## maybe str(Data_Record) ; plot(Data_Record) ...
+data(Training_Data_List)
+## maybe str(Training_Data_List) ; plot(Training_Data_List) ...
 }
 \keyword{datasets}

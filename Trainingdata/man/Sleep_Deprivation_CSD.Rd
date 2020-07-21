@@ -12,10 +12,10 @@ Cortical Speading Depolarising is thought to be the cause of migraines, rats wer
   Data consists of following columns
   \describe{
     \item{\code{Group}}{string recording mouse group}
-    \item{\code{N}}{a numeric vector of number of mice}
-    \item{\code{Mean CSD}}{a numeric vector of recorded CSD threshold}
-    \item{\code{SD CSD Threshold}}{a numeric vector of threshold standard deviation}
-    \item{\code{Range CSD Threshold}}{a numeric vector recording CSD range}
+    \item{\code{Number}}{a numeric vector of number of mice}
+    \item{\code{Mean.CSD.Threshold}}{a numeric vector of recorded CSD threshold}
+    \item{\code{SD.CSD.Threshold}}{a numeric vector of threshold standard deviation}
+    \item{\code{Range.CSD.Threshold}}{a numeric vector recording CSD range}
   }
 }
 \details{

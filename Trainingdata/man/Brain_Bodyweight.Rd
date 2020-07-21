@@ -13,6 +13,7 @@ Brain and Bodyweight values of a number of animals, domestic and wild, looking f
   Data has following columns
   \describe{
     \item{\code{Species}}{a string of species name}
+    \item{\code{Category}}{a string putting animals into three groups: wild, domesticated and extinct}
     \item{\code{Body.weight}}{a numeric vector of bodyweight in kg}
     \item{\code{Brain.weight}}{a numeric vector of brain weight in g}
     \item{\code{Log.body.weight}}{a numeric vector of logged bodyweight}

@@ -1,4 +1,4 @@
-Family	Species	Morpho  Functional Group	D.mean	D.s.d.	D%	S.mean	S.s.d.	S%
+Family	Species	Morpho  Functional Group	Deep Mean Biomass	Deep Standard Deviation of Biomass	Deep Percentage	Shallow Mean Biomass	Shallow Standard Deviation of Biomass	Shallow Percentage
 Acanthuridae	Acanthurus bahianus	Detritivore	23.3	9.1	4.4	27.1	6.9	7.7
 Acanthuridae	Acanthurus chirurgus	Detritivore	21.7	12.1	6.1	38.9	11.6	11
 Acanthuridae	Acanthurus coeruleus	Algivore	5		0.2	14.5	4	2

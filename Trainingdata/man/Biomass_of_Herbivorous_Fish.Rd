@@ -1,13 +1,13 @@
-\name{Biomass_of_Herbiverous_Fish}
-\alias{Biomass_of_Herbiverous_Fish}
+\name{Biomass_of_Herbivorous_Fish}
+\alias{Biomass_of_Herbivorous_Fish}
 \docType{data}
 \title{
-Biomass_of_Herbiverous_Fish
+Biomass_of_Herbivorous_Fish
 }
 \description{
 Biomass of deep and shallow Abobrinha Reef fish
 }
-\usage{data("Biomass_of_Herbiverous_Fish")}
+\usage{data("Biomass_of_Herbivorous_Fish")}
 \format{
   Data has the following colums
   \describe{
@@ -29,7 +29,7 @@ https://doi.org/10.3389/fmars.2020.00488.s001
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
-data(Biomass_of_Herbiverous_Fish)
-## maybe str(Biomass_of_Herbiverous_Fish) ; plot(Biomass_of_Herbiverous_Fish) ...
+data(Biomass_of_Herbivorous_Fish)
+## maybe str(Biomass_of_Herbivorous_Fish) ; plot(Biomass_of_Herbivorous_Fish) ...
 }
 \keyword{datasets}

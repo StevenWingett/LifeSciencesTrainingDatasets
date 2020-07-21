@@ -1,4 +1,4 @@
-Pollen type	Growth form	AM mycorrhiza	EM mycorrhiza	Ericoid mycorrhiza	Clonality	Seed weight (mg)	Height (m)	LDMC (mg/g)	SNPS	SLA (mm2/mg)	L	T	K	F	R	N
+Pollen type	Growth form	AM mycorrhiza	EM mycorrhiza	Ericoid mycorrhiza	Clonality	Seed weight mg	Height m	LDMC mg/g	SNPS	SLA mm2/mg	L	T	K	F	R	N
 Acer	Woody	1	0	0	0	158.6	25	NA	NA	NA	4	6	4	NA	NA	NA
 Achillea	Herbaceous	1	0	0	0.5	0.2	0.5	NA	2925	17.3	8	NA	NA	4	NA	5
 Alchemilla	Herbaceous	1	0	0	0.5	0.5	0.2	251	193	17.3	7	4	4	5	4	3

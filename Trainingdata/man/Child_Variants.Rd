@@ -13,12 +13,12 @@ Record of position and content of DNA mutations in children
   \describe{
     \item{\code{CHR}}{string recording the chromosome}
     \item{\code{POS}}{a numeric vector of gene position on chromosome}
-    \item{\code{dbSNP}}{a numeric vector of gene position on chromosome}
-    \item{\code{REF}}{a string of referance base}
-    \item{\code{ALT}}{a string of alteranate base}
+    \item{\code{dbSNP}}{a string DB identifier for the dbSNP database}
+    \item{\code{REF}}{a string of reference sequence}
+    \item{\code{ALT}}{a string of alteranate sequence}
     \item{\code{QUAL}}{a numeric vector of mutation quality}
     \item{\code{GENE}}{a string of gene name}
-    \item{\code{ENST}}{}
+    \item{\code{ENST}}{a string consiting of the Ensembl Transcript ID}
     \item{\code{MutantReads
 }}{a numeric vector of mutant reads}
     \item{\code{COVERAGE

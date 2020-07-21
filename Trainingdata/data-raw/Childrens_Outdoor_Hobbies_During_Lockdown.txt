@@ -1,4 +1,4 @@
-Outdoor Hobby	N	%
+Outdoor Hobby	Number	Percent
 Biking	90	6.1
 Gardening	11	0.7
 Imaginative Play	4	0.3
