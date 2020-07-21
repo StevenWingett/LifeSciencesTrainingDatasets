@@ -1,0 +1,3 @@
+## code to prepare `Biochemical_Oxygen_Demand` dataset goes here
+
+usethis::use_data(Biochemical_Oxygen_Demand, overwrite = TRUE)

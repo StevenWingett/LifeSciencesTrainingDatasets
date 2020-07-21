@@ -1,0 +1,24 @@
+Data set Name	File_Name	Reference (doi)	Graph Description	Categorical_Data	Continuous_Data	Log_Data	Normally_Distributed_Data	Machine_Learning	Description
+Cuttlefish Buoyancy	Cuttlefish_Buoyancy.txt	https://doi.org/10.3390/biology9070147	Line graph of the effects of CO2 treatment and feeding against percentage of floaters	TRUE?					Experiment to test ocean acidification and feeding on cuttlefish buoyancy
+Modern Pollen-Plant Diversity	"Modern_Pollen_Plant_Diversity_
+Relationships.txt"	https://doi.org/10.3389/fevo.2020.00207	"Line graph looking for 
+reproduction type and seed weight correlation"			True?			Varied test on woodland and herbaceous plants trying to explain evolutionary histories 
+Birds Sighted in Texas 2018	Bird_Sighting_Texas_2018.txt	"https://data.world/owentemple/birds-observed-in-texas-in-
+2018/workspace/project-summary?agentid=owentemple&datasetid=birds-observed-in-texas-in-2018"	Bar chart containing the top 10 most commnly seen birds and the familial distributions	TRUE?					Log of birds seen in Texas in 2018
+"Herbiverous  fish in reefs of 
+Arraial do Cabo"	Biomass_of_Herbiverous_Fish_(Abobrinha).txt	https://doi.org/10.3389/fmars.2020.00488.s001	Barplot relative mean biomass of herbiverous fish at deep Abobrinha	TRUE?					
+Brain-Bodyweight Correlation	Brain_Bodyweight.txt		"Line graph of brain weight against bodyweight to show trend, if any"	TRUE?		TRUE?			"Brain and Bodyweight values of a number of animals, domestic and wild, 
+looking for correlation"
+Genome Mutations in Children	Child_Variants.txt				TRUE?				Record of position and content of DNA mutations in children
+Biochemical Oxygen Demand	Biochemical_Oxygen_Demand.txt	"Marske (1967),?Biochemical Oxygen Demand Data Interpretation Using Sum of Squares Surface?M.Sc. Thesis, University of Wisconsin ? Madison."	"Line graph plotting O2 
+use against time"	TRUE?					Measure of oxygen use against time by waterborne bacteria
+"Outdoor hobbies adopted by 
+children during Covid-19"	Childrens_Outdoor_Hobbies_During_Covid-19.txt	https://doi.org/10.6084/m9.figshare.12617727.v1	"Pie charts showing compared 
+percentages of activites"	TRUE?					Results of a questionaire from parents about their childrens outdoor activites during lockdown
+"Indoor hobbies adopted by
+children during Covid-19"	Childrens_Indoor_Hobbies_During_Covid-19.txt	https://doi.org/10.6084/m9.figshare.12617727.v1	"Pie charts showing compared 
+percentages of activites"	TRUE?					Results of a questionaire from parents about their childrens indoor activites during lockdown
+"Investigation into sleep 
+deprevation causing migraines in rats"	Sleep_Deprivation_CSD.txt	https://doi.org/10.1186/s10194-020-01155-w	Barplot comparison of CSD threshold (amount required for migraine trigger) across differing sleep deprevation amounts	TRUE?					"Cortical Speading Depolarising is thought to be the cause of migraines, rats were sleep deprived and their brains tested for potential difference to see if sleep loss makes migraines occur more often"
+Plant CO2 uptake and concentration	Plant_CO2_Uptake.txt	rdata	Barplots comparing different plant types and heat treatments and the effect on CO2 uptake	TRUE?					Comparison of species and heat treatment of CO2 concentration and uptake by plants
+Neutrophils	Neutrohils.txt								
