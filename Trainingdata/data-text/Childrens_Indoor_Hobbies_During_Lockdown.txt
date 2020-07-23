@@ -1,0 +1,25 @@
+Indoor.Hobby	Number	Percent
+Arts & Crafts	195	12.5
+Puzzles and Games	162	11.3
+Building stuff	11	0.8
+Cleaning	4	0.3
+Computer	35	2.4
+Cooking/Baking	32	2.1
+Designing/Creating	8	0.6
+Helping Others	1	0.1
+Imaginitive Play	9	0.6
+Tablet	12	0.8
+Learning	12	0.8
+Lego	51	3.4
+Making Videos	3	0.2
+Music	28	2
+Physical ability	37	2.6
+Phone	2	0.2
+Reading	67	4.5
+Sewing	1	0.7
+Sleeping	1	0.1
+Television	47	3.2
+Toys	18	1.2
+Video Chat	7	0.5
+Video Games	149	10.2
+Writing	2	0.1

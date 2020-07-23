@@ -1,0 +1,5 @@
+Group	Number	Mean.CSD.Threshold	SD.CSD.Threshold	Range.CSD.Threshold
+Control	19	50	227	1-800
+6h.Deprivation	11	20	116	1-400
+12h.Deprivation	14	10	76	1-300
+6h.and.12h.Deprivation	25	15	93	1-400
