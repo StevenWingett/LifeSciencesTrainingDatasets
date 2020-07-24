@@ -1,0 +1,111 @@
+Pollen type,Growth form,AM mycorrhiza,EM mycorrhiza,Ericoid mycorrhiza,Clonality,Seed weight (mg),Height (m),LDMC (mg/g),SNPS,SLA (mm2/mg),L,T,K,F,R,N
+Acer,Woody,1,0,0,0.0,158.6,25.0,NA,NA,NA,4.0,6.0,4.0,NA,NA,NA
+Achillea,Herbaceous,1,0,0,0.5,0.2,0.5,NA,2925.0,17.3,8.0,NA,NA,4.0,NA,5.0
+Alchemilla,Herbaceous,1,0,0,0.5,0.5,0.2,251.0,193.0,17.3,7.0,4.0,4.0,5.0,4.0,3.0
+Alnus,Woody,1,1,0,0.3,1.6,12.8,213.8,55000.5,24.0,5.5,4.5,4.0,8.0,7.0,NA
+Anemone,Herbaceous,1,0,0,0.5,4.4,0.3,283.6,81.6,24.1,5.0,5.5,4.0,4.0,6.5,4.5
+Angelica sylvestris,Herbaceous,1,0,0,0.0,1.2,1.0,NA,2769.5,NA,7.0,NA,4.0,8.0,NA,NA
+Apiaceae,Herbaceous,0.9,0,0,0.2,2.3,0.6,168.2,7605.5,19.7,6.9,5.5,4.8,6.5,6.6,5.7
+Artemisia,Herbaceous,1,0,0,0.0,0.2,1.0,NA,375000.0,NA,7.0,6.0,NA,6.0,NA,8.0
+Asteraceae,Herbaceous,1,0.1,0,0.3,1.0,0.5,187.0,1983.0,28.9,6.7,5.8,3.4,5.2,7.0,4.6
+Betula,Woody,1,1,0,0.0,0.4,13.1,NA,10000000.0,14.4,7.0,5.0,8.0,8.5,3.5,3.0
+Brassicaceae,Herbaceous,1,0,0,0.3,0.1,0.6,NA,9745.0,NA,7.5,6.0,3.0,5.0,NA,7.5
+Calluna vulgaris,Herbaceous,0,0,1,0.1,0.0,0.4,NA,55000.5,10.9,8.0,NA,3.0,NA,1.0,1.0
+Caltha palustris,Herbaceous,1,0,0,0.5,1.1,0.3,NA,905.2,19.0,7.0,NA,NA,9.0,NA,NA
+Campanula,Herbaceous,1,0,0,0.3,0.1,0.5,182.8,728.0,37.1,6.2,5.4,4.8,4.6,7.4,4.4
+Cannabaceae,Herbaceous,1,0,0,0.3,3.5,2.9,231.7,996.0,27.3,7.0,6.0,3.0,8.0,6.0,8.0
+Cardamine,Herbaceous,0,0,0,0.7,0.4,0.3,NA,254.9,25.1,5.5,NA,4.0,7.5,6.0,4.0
+Carpinus,Woody,0,1,0,0.1,51.0,18.0,258.6,705318.0,23.4,4.0,6.0,4.0,NA,NA,NA
+Caryophyllaceae,Herbaceous,0.5,0,0,0.3,0.7,0.3,200.7,2552.4,24.8,6.3,5.2,4.1,5.3,5.9,4.4
+Centaurea,Herbaceous,1,0,0,0.1,3.8,0.7,NA,2275.0,18.4,7.0,NA,4.0,3.0,8.0,4.0
+Chenopodiaceae,Herbaceous,0.5,0,0,0.0,0.5,0.4,NA,5486.5,34.8,4.0,5.0,3.0,4.5,6.0,7.0
+Cirsium,Herbaceous,1,0,0,0.3,2.2,0.8,NA,3210.9,15.5,7.3,5.0,3.0,6.7,6.3,5.8
+Cladium mariscus,Herbaceous,1,0,0,0.9,2.2,1.2,NA,NA,NA,9.0,6.0,3.0,10.0,9.0,3.0
+Cornus,Woody,1,0,0,0.5,56.5,2.5,NA,2900.0,NA,7.0,5.0,4.0,5.0,7.0,NA
+Corylus,Woody,1,1,0,0.1,941.7,3.5,NA,1250.0,22.3,6.0,5.0,3.0,NA,NA,5.0
+Crepis,Herbaceous,1,0,0,0.0,0.6,0.6,NA,225.0,NA,7.0,NA,3.0,8.0,8.0,6.0
+Cyperaceae,Herbaceous,0.3,0,0,0.5,1.2,0.4,289.7,902.8,18.4,7.4,4.9,3.6,8.0,5.4,3.0
+Dactylorhiza,Herbaceous,0,0,0,0.0,NA,0.4,131.6,80500.0,24.7,7.3,5.0,2.3,8.0,7.0,2.0
+Droseraceae,Herbaceous,0.5,0,0,0.5,0.0,0.1,NA,462.0,NA,8.0,4.0,3.0,9.0,1.0,1.0
+Epipactis,Herbaceous,0.2,0.3,0,0.4,0.0,0.3,189.2,18925.0,27.4,4.4,4.8,3.0,5.8,6.4,3.2
+Equisetum,Herbaceous,0.7,0,0,0.5,NA,0.5,224.1,NA,11.9,6.0,4.0,6.0,7.6,6.8,3.6
+Ericaceae,Herbaceous,0.3,0.7,0.67,0.6,0.1,0.2,332.3,NA,12.4,6.0,4.5,5.0,6.3,3.7,2.0
+Eupatorium cannabinum,Herbaceous,1,0,0,0.5,0.3,0.8,NA,574.0,36.8,7.0,5.0,3.0,7.0,7.0,8.0
+Fabaceae,Herbaceous,1,0,0,0.0,2.0,0.2,NA,112.0,18.9,8.0,6.0,3.0,3.0,7.0,2.0
+Filipendula,Herbaceous,1,0,0,0.5,0.8,0.7,NA,1647.5,14.7,7.0,5.5,5.0,5.5,8.0,3.0
+Frangula,Woody,1,1,0,0.0,17.1,4.0,NA,450.0,NA,6.0,6.0,5.0,8.0,4.0,NA
+Fraxinus,Woody,1,1,0,0.0,71.4,26.0,NA,52500.3,17.6,4.0,5.0,3.0,NA,7.0,7.0
+Galeopsis,Herbaceous,1,0,0,0.3,3.0,0.6,NA,391.2,43.4,5.5,NA,3.0,6.0,7.0,6.5
+Galium,Herbaceous,0.75,0,0,0.5,0.6,0.3,210.0,83.7,27.2,6.3,5.5,5.0,6.8,7.5,2.5
+Geranium,Herbaceous,1,0,0,0.4,5.7,0.4,227.1,252.2,30.5,6.8,5.3,4.0,5.3,7.5,6.4
+Geum,Herbaceous,1,0,0,0.3,1.3,0.5,NA,238.6,40.4,5.0,5.0,5.0,6.5,NA,5.5
+Hepatica,Herbaceous,1,0,0,0.5,3.0,0.1,176.8,49.0,22.9,4.0,6.0,4.0,4.0,7.0,5.0
+Hieracium,Herbaceous,1,0,0,0.5,0.7,0.4,173.6,835.2,20.8,6.0,6.0,NA,4.0,4.0,2.0
+Hypericum perforatum,Herbaceous,1,0,0,0.5,0.1,0.5,NA,13755.0,25.6,7.5,6.0,4.0,5.0,4.5,2.5
+Impatiens,Herbaceous,1,0,0,0.0,NA,0.6,NA,19.5,NA,4.0,5.0,5.0,7.0,7.0,6.0
+Juniperus,Woody,1,1,0,0.0,NA,2.5,NA,5500.5,NA,NA,NA,NA,NA,NA,NA
+Lemna,Herbaceous,0,0,0,0.9,NA,0.0,NA,NA,NA,7.0,5.0,3.0,11.0,NA,6.0
+Listera ovata,Herbaceous,0,0,0,0.5,NA,0.5,NA,85500.0,NA,6.0,NA,3.0,6.0,7.0,7.0
+Lychnis,Herbaceous,1,0,0,0.5,0.2,0.7,NA,5500.5,26.0,7.0,5.0,3.0,7.0,NA,NA
+Lycopodium annotinum,Herbaceous,1,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lycopus europeus,Herbaceous,1,0,0,0.5,0.4,0.5,NA,2078.0,NA,7.0,6.0,5.0,9.0,7.0,7.0
+Lysimachia,Herbaceous,1,0,0,0.6,0.1,0.5,198.0,972.5,25.8,5.7,6.0,2.5,7.7,NA,3.0
+Lythrum,Herbaceous,1,0,0,0.1,0.0,0.7,NA,5500.5,NA,7.0,5.0,5.0,8.0,6.0,NA
+Melampyrum,Herbaceous,0.3,0.3,0,0.0,5.1,0.3,154.9,87.5,41.9,5.0,5.0,4.0,4.7,3.7,2.7
+Mentha,Herbaceous,0.7,0,0,0.5,0.2,0.3,218.7,161.5,27.1,7.3,5.7,3.4,4.7,6.4,2.6
+Menyanthes trifoliata,Herbaceous,1,0,0,0.9,2.6,0.2,184.6,48.5,19.3,8.0,NA,NA,9.0,NA,3.0
+Mercurialis perennis,Herbaceous,1,0,0,0.5,5.8,0.3,NA,14.0,NA,2.0,NA,3.0,NA,8.0,7.0
+Myrica,Woody,1,0,0,0.9,1.6,0.8,NA,14370.0,NA,8.0,6.0,2.0,9.0,3.0,3.0
+Nuphar,Herbaceous,0,0,0,0.5,25.4,0.0,NA,NA,NA,8.0,6.0,4.0,11.0,7.0,6.0
+Orthilia secunda,Herbaceous,0,1,0,0.5,0.0,0.1,334.6,3558.0,18.0,4.0,NA,3.0,5.0,NA,2.0
+Oxalis acetosella,Herbaceous,1,0,0,0.5,1.5,0.1,NA,11.2,60.8,1.0,NA,3.0,5.0,4.0,6.0
+Parnassia palustris,Herbaceous,1,0,0,0.5,0.0,0.3,133.7,1792.0,23.6,8.0,NA,NA,8.0,7.0,2.0
+Phragmites,Herbaceous,1,0,0,0.9,0.2,2.4,NA,1680.0,12.2,7.0,5.0,NA,10.0,7.0,7.0
+Picea,Woody,0,1,0,0.0,7.2,40.0,NA,80374.5,17.2,5.0,3.0,6.0,NA,NA,NA
+Pinguicula,Herbaceous,0,1,0,0.5,0.0,0.1,NA,NA,40.4,8.0,NA,3.0,8.0,7.0,2.0
+Pinus,Woody,0,1,0,0.0,8.5,30.0,555.8,22353.0,5.0,7.0,NA,7.0,NA,NA,NA
+Plantago lanceolata,Herbaceous,1,0,0,0.1,1.5,0.3,NA,1500.0,16.2,6.0,NA,3.0,NA,NA,NA
+Plantago major/media,Herbaceous,1,0,0,0.3,0.3,0.3,NA,6480.0,20.3,7.5,NA,7.0,4.5,7.0,4.5
+Poaceae,Herbaceous,0.97,0,0,0.4,0.9,0.6,278.6,1400.0,21.6,6.8,4.9,3.8,6.1,5.6,4.5
+Polygala,Herbaceous,1,0,0,0.0,0.8,0.1,195.5,NA,22.4,9.0,NA,4.0,9.0,9.0,1.0
+Polygonum,Herbaceous,1,0,0,0.5,31.2,0.3,167.2,17.0,27.7,7.0,5.0,5.0,3.0,7.0,3.0
+Polypodiaceae,Herbaceous,1,0.25,0,0.5,NA,0.6,179.0,1834146.0,72.3,3.5,4.0,3.5,6.0,4.3,5.0
+Populus,Woody,1,1,0,0.5,0.1,22.5,365.4,NA,14.6,6.0,5.0,5.0,5.0,NA,NA
+Potentilla,Herbaceous,1,0.166666667,0,0.6,0.4,0.4,NA,174.8,23.6,6.8,6.0,3.7,6.5,5.0,4.4
+Primula farinosa,Herbaceous,1,0,0,0.5,0.1,0.1,172.3,472.0,23.1,8.0,NA,4.0,8.0,9.0,2.0
+Prunella,Herbaceous,1,0,0,0.5,0.8,0.2,NA,204.9,21.7,7.0,NA,3.0,5.0,7.0,NA
+Prunus,Woody,1,1,0,0.1,65.7,9.0,340.8,8000.0,19.3,5.0,5.0,3.0,8.0,7.0,6.0
+Pteridium,Herbaceous,1,0,0,0.5,NA,0.8,NA,NA,NA,6.0,5.0,3.0,5.0,3.0,3.0
+Quercus,Woody,0,1,0,0.0,2645.0,40.0,NA,52500.3,14.0,7.0,6.0,6.0,NA,NA,NA
+Ranunculaceae,Herbaceous,1,0,0,0.4,1.9,0.4,179.1,109.3,17.2,6.3,6.0,3.5,7.2,5.3,3.7
+Rhamnus,Woody,1,0,0,0.0,NA,4.0,NA,4500.0,NA,NA,NA,NA,NA,NA,NA
+Ribes,Woody,1,0.3,0,0.0,7.0,1.1,266.3,1112.3,32.4,4.3,5.0,6.0,8.5,6.7,6.0
+Rosa,Woody,1,0,0,0.5,12.2,1.0,NA,NA,NA,7.0,6.0,7.0,5.0,8.0,3.0
+Rubus,Herbaceous,1,0,0,0.5,3.4,1.0,NA,200.0,NA,6.0,5.0,4.0,NA,8.0,7.0
+Rumex,Herbaceous,0.7,0,0,0.3,1.5,0.9,129.1,2809.9,17.7,7.3,5.5,5.0,7.5,7.0,6.3
+Salix,Woody,0.7,1,0,0.2,0.1,4.3,NA,8903450.5,NA,7.3,4.5,5.0,7.0,6.7,5.0
+Sambucus,Woody,1,1,0,0.0,1293.0,2.0,172.2,21926.0,31.0,6.0,4.0,4.0,5.0,5.0,8.0
+Scheuchzeria,Herbaceous,0.0,0,0,0.5,NA,0.2,292.9,0.0,9.8,9.0,5.0,5.0,9.0,3.0,2.0
+Scutellaria,Herbaceous,1,0,0,0.5,0.8,0.4,NA,288.0,NA,7.0,6.0,5.0,9.0,7.0,6.0
+Selaginella,Herbaceous,1,0,0,0.0,NA,0.0,NA,NA,24.5,8.0,3.0,3.0,7.0,7.0,3.0
+Senecio,Herbaceous,1,0,0,0.5,0.4,0.3,NA,3204.5,19.6,6.5,NA,3.0,5.5,8.0,4.0
+Solanum dulcamara,Herbaceous,1,0,0,0.5,1.6,1.8,57.7,53459.0,NA,7.0,5.0,NA,8.0,NA,8.0
+Solanum nigrum,Herbaceous,1,0,0,0.5,0.7,0.6,125.9,3900.0,24.6,7.0,6.0,3.0,5.0,7.0,8.0
+Sorbus,Woody,1,0.3,0,0.1,16.0,10.3,235.7,24750.0,19.4,6.0,5.5,3.5,5.0,6.0,NA
+Spergularia,Herbaceous,1,0,0,0.0,0.1,0.2,108.7,1974.0,29.4,7.0,6.0,NA,7.0,7.0,5.0
+Succisa,Herbaceous,1,0,0,0.1,1.6,0.5,NA,550.5,15.6,7.0,5.0,3.0,7.0,NA,2.0
+Taraxacum officinale,Herbaceous,1,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Thelypteris,Herbaceous,1,0,0,0.5,NA,0.4,143.7,NA,31.2,5.0,6.0,NA,8.0,5.0,6.0
+Tilia,Woody,1,1,0,0.1,40.0,18.0,NA,NA,NA,5.0,5.0,4.0,5.0,NA,5.0
+Tofieldia,Herbaceous,1,0,0,0.5,0.1,0.3,231.8,NA,17.5,8.0,NA,4.0,8.0,8.0,2.0
+Trifolium,Herbaceous,1,0,0,0.3,1.2,0.3,207.8,916.1,26.4,7.2,5.7,3.7,4.3,6.0,3.7
+Trollius,Herbaceous,1,0,0,0.5,1.0,0.4,NA,173.0,NA,9.0,3.0,5.0,7.0,6.0,5.0
+Typha sparganium,Herbaceous,1,0,0,0.5,0.3,1.3,NA,207500.3,NA,8.0,6.0,5.0,10.0,7.0,8.0
+Ulmus,Woody,1,0,0,0.0,13.2,35.0,234.4,NA,35.2,4.0,5.0,3.0,6.0,7.0,7.0
+Urtica,Herbaceous,1,0,0,0.5,0.1,0.7,NA,806.2,31.6,NA,NA,NA,6.0,7.0,8.0
+Vaccinium,Herbaceous,0.0,0,1,0.8,0.2,0.3,418.6,139.3,14.9,5.5,NA,5.0,NA,1.5,3.0
+Valeriana officinalis,Herbaceous,1,0,0,0.5,1.0,0.5,NA,398.0,22.2,7.0,6.0,5.0,8.0,7.0,5.0
+Veronica,Herbaceous,0.8,0,0,0.5,0.2,0.2,215.9,276.4,27.0,6.8,5.0,3.0,7.0,4.3,4.3
+Viburnum,Woody,1,0,0,0.0,36.6,3.0,NA,3640.0,17.9,6.0,5.0,3.0,NA,7.0,6.0
+Vicia,Herbaceous,1,0.1,0,0.2,17.3,0.5,244.7,98.3,28.4,6.5,5.7,4.3,5.1,6.9,4.0
+Viola,Herbaceous,1,0,0,0.4,1.2,0.1,164.9,848.0,35.4,5.3,5.0,4.7,4.0,6.7,2.0
