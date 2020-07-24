@@ -19,8 +19,8 @@ Experiment to test ocean acidification and feeding on cuttlefish buoyancy
     \item{\code{hatching
 }}{numeric vector of hatched or not}
     \item{\code{hatching_Date}}{a numeric vector measuring hatched or no}
-    \item{\code{days_Until_Hatching_trt}}{numeric vector}
-    \item{\code{sampling_Date}}{string of date}
+    \item{\code{days_Until_hatching_trt}}{numeric vector}
+    \item{\code{sampling_date}}{string of date}
     \item{\code{floating
 }}{a numeric vector of floating or not}
     \item{\code{feeding
