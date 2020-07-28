@@ -15,7 +15,7 @@ Cortical Speading Depolarising is thought to be the cause of migraines, rats wer
     \item{\code{Number}}{a numeric vector of number of mice}
     \item{\code{Mean.CSD.Threshold}}{a numeric vector of recorded CSD threshold}
     \item{\code{SD.CSD.Threshold}}{a numeric vector of threshold standard deviation}
-    \item{\code{Range.CSD.Threshold}}{a numeric vector recording CSD range}
+    \item{\code{Range.CSD.Threshold}}{a character vector recording CSD range}
   }
 }
 \details{

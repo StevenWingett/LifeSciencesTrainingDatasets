@@ -12,7 +12,7 @@ Recording white blood cell levels when exposed to a variety of chemicals
   A data frame has following columns
   \describe{
     \item{\code{DMSO}}{a numeric vector}
-    \item{\code{TGX-211}}{a numeric vector}
+    \item{\code{TGX.211}}{a numeric vector}
     \item{\code{PI103}}{a numeric vector}
     \item{\code{Akt1}}{a numeric vector}
   }
