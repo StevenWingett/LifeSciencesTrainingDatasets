@@ -1,0 +1,61 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Neutrophils
+===========
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>%
+  filter(startsWith(Data_set_Name,"Neutrophils"))
+```
+
+```{r}
+data("Neutrophils")
+Neutrophils
+```
+
+Suggested Usage
+---------------
+A simple replicated experiment with different numbers of observations for each feature.  The data is distributed in wide format, leading to the insertion of NA values which need to be removed.
+
+
+Example Usage
+-------------
+
+### Restructuring the data
+
+```{r}
+Neutrophils %>%
+  pivot_longer(
+    cols=everything(),
+    names_to="sample",
+    values_to="value"
+  ) %>%
+  filter(!is.na(value)) -> Neutrophils
+
+Neutrophils
+```
+
+### Plotting data
+
+```{r}
+Neutrophils %>%
+  ggplot(aes(x=sample, y=value, colour=sample)) +
+  geom_jitter(height=0, show.legend = FALSE, size=3, width=0.2) +
+  stat_summary(geom="errorbar", fun=mean, fun.min=mean, fun.max=mean, colour="darkgrey", size=2)
+```
+

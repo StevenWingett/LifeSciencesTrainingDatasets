@@ -1,0 +1,101 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Child_Variants
+==============
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+
+```{r}
+Training_Data_List %>%
+  filter(Data_set_Name=="Genome Mutations in Children")
+```
+
+```{r}
+data("Child_Variants")
+head(Child_Variants,n=500)
+```
+
+Suggested Usage
+---------------
+This is a large and complex dataset giving details of a large number of sequence variants in a clinical study.  There are many potential avenues to explore as the data has both categorical and quantitative variables and complex relationships between them.
+
+Some interesting observations might be:
+
+* Some variants are in dbSNP but some aren't. Novel variants are indicated by a dot rather than blank or NA
+
+* There are a few related measures of quality including QUAL, MutantReads, COVERAGE and MutantReadPercent.
+
+* Some varianbles (eg MutantReadPercent) have interesting distributions
+
+* By looking the the length of REF and ALT you can classify variants into SNPs (1 base > 1 base), Insertions (Multi-bases > 1 base) or Deletions (1 base > Multi-bases).  There are a few cases where Multi Base > Multi Base.
+
+* We have genomic positions for variants and some properties will change depending on the chromosome.
+
+
+Example Usage
+-------------
+
+### Plotting QC metrics
+
+```{r}
+Child_Variants %>%
+  arrange(desc(QUAL)) %>%
+  ggplot(aes(x=COVERAGE, y=MutantReadPercent, colour=QUAL)) +
+  geom_point() +
+  scale_colour_gradient(low="lightgrey", high="black")
+```
+
+### Average coverage per chromosome
+
+```{r}
+Child_Variants %>%
+  group_by(CHR) %>%
+  summarise(mean_coverage=mean(COVERAGE), sd_coverage=sd(COVERAGE), count=n()) %>%
+  ggplot(aes(x=CHR, y=mean_coverage, size=count, ymin=mean_coverage-sd_coverage, ymax=mean_coverage+sd_coverage)) +
+  geom_point()+
+  geom_errorbar(size=0.5)
+```
+
+### Distribution of MutantReadPercent by dbSNP
+
+```{r}
+Child_Variants %>%
+  mutate(variant_type=ifelse(dbSNP==".", "novel", "known")) %>%
+  ggplot(aes(x=MutantReadPercent, fill=variant_type)) +
+  geom_density(colour="black", show.legend = FALSE) + 
+  facet_grid(rows=vars(variant_type))
+```
+
+
+### Count most frequent SNPs
+
+```{r}
+Child_Variants %>%
+  filter(nchar(REF) == 1 & nchar(ALT) == 1) %>%
+  unite(VAR, REF,ALT, sep=">") %>%
+  group_by(VAR) %>%
+  count() %>%
+  ungroup() %>%
+  arrange(desc(n)) %>%
+  mutate(VAR=factor(VAR, levels=VAR)) %>%
+  ggplot(aes(x=VAR,y=n)) +
+  geom_col()
+```
+
+
+
+

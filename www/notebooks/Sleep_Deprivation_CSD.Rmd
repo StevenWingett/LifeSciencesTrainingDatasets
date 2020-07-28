@@ -1,0 +1,53 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Sleep_Deprivation_CSD
+=====================
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>%
+  filter(str_detect(Data_set_Name,"sleep"))
+```
+
+
+```{r}
+data("Sleep_Deprivation_CSD")
+Sleep_Deprivation_CSD
+```
+
+Suggested Usage
+---------------
+This is a small dataset comprising just a median, mean and standard deviation.  It's quite a nice demonstration of data where the mean is not a good summary of the data since the SD is huge comapared to the mean.  In the original paper the data is shown on a log scale which makes much more sense, but can't be used on the summarised values here.
+
+
+
+
+Example Usage
+-------------
+
+### Plotting mean and SD
+
+```{r}
+Sleep_Deprivation_CSD %>%
+  mutate(Group=factor(Group,levels=Group)) %>%
+  ggplot(aes(x=Group, y=Mean.CSD.Threshold, ymin=Mean.CSD.Threshold-SD.CSD.Threshold, ymax=Mean.CSD.Threshold+SD.CSD.Threshold)) +
+  geom_col() +
+  geom_errorbar(width=0.4)
+```
+
+
+

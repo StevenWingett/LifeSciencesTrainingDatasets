@@ -1,0 +1,114 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Childrens_Hobbies_During_Lockdown
+=================================
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>% 
+  filter(str_detect(Data_set_Name,"hobbies"))
+```
+
+This is actually two related datasets ```Childrens_Indoor_Hobbies_During_Lockdown``` and ```Childrens_Outdoor_Hobbies_During_Lockdown```
+
+```{r}
+data("Childrens_Indoor_Hobbies_During_Lockdown")
+Childrens_Indoor_Hobbies_During_Lockdown
+```
+
+
+```{r}
+data("Childrens_Outdoor_Hobbies_During_Lockdown")
+Childrens_Outdoor_Hobbies_During_Lockdown
+```
+Suggested Usage
+---------------
+This is a nice dataset to illustrate merging of multiple datasets.  The data is compatible in that the two files can extend each other once a new column is added to indicate the original source of the data.
+
+The data shown here don't include the "None of the above" children, so the percentage values don't sum to 100.  You could either recalculate the percentages based on the values which are recorded, or calculate how many other people didn't do any of the activities.
+
+
+
+
+Example Usage
+-------------
+
+### Merging two datasets together
+
+```{r}
+Childrens_Indoor_Hobbies_During_Lockdown %>%
+  rename(Hobby=Indoor.Hobby) %>%
+  add_column(Location="Indoor") -> Childrens_Indoor_Hobbies_During_Lockdown
+
+Childrens_Indoor_Hobbies_During_Lockdown
+```
+
+```{r}
+Childrens_Outdoor_Hobbies_During_Lockdown %>%
+  rename(Hobby=Outdoor.Hobby) %>%
+  add_column(Location="Outdoor") -> Childrens_Outdoor_Hobbies_During_Lockdown
+
+Childrens_Outdoor_Hobbies_During_Lockdown
+```
+
+```{r}
+bind_rows(Childrens_Indoor_Hobbies_During_Lockdown, Childrens_Outdoor_Hobbies_During_Lockdown) -> Childrens_Hobbies_During_Lockdown
+
+Childrens_Hobbies_During_Lockdown
+```
+
+### Barchart of hobbies
+
+```{r fig.height=7, fig.width=7}
+Childrens_Hobbies_During_Lockdown %>%
+  arrange(Number) %>%
+  mutate(Hobby=factor(Hobby,levels=Hobby)) %>%
+  ggplot(aes(x=Hobby, y=Number, fill=Location)) +
+  geom_col() +
+  coord_flip()
+```
+
+### Calculation of percentages
+```{r}
+Childrens_Hobbies_During_Lockdown %>%
+  group_by(Location) %>%
+  mutate(Hobby_Percentage=100*Number/sum(Number)) %>%
+  ungroup() -> Childrens_Hobbies_During_Lockdown
+
+Childrens_Hobbies_During_Lockdown
+```
+```{r fig.height=16, fig.width=8}
+  library(ggrepel)
+  Childrens_Hobbies_During_Lockdown %>%
+    arrange(Location,Hobby_Percentage) %>%
+    mutate(Hobby=factor(Hobby,levels=Hobby)) %>%
+    ggplot(aes(x="", y=Hobby_Percentage, fill=Hobby, label=Hobby)) +
+    geom_col(show.legend = FALSE) +
+    geom_text_repel(position=position_stack(vjust=0.5)) +
+    facet_grid(rows=vars(Location)) +
+    scale_fill_manual(values=rep(c("#CC9999","#9999CC"),times=100)[1:39]) +
+    coord_polar("y",start=0) +
+    theme (
+      plot.title = element_text(hjust=0.5),
+      axis.line = element_blank(),
+      axis.text = element_blank(),
+      axis.ticks = element_blank())
+```
+
+
+
+

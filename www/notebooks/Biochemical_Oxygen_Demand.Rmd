@@ -1,0 +1,73 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Biochemical_Oxygen_Demand
+=========================
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>%
+  filter(Data_set_Name=="Biochemical Oxygen Demand")
+```
+
+```{r}
+data("Biochemical_Oxygen_Demand")
+Biochemical_Oxygen_Demand
+```
+
+Suggested Usage
+---------------
+A simple quantitative dataset which can be used to show the relationship between two variables.  The data has no import problems and no NA values.
+
+The timescale is discontinuous, with Time=6 missing.
+
+The relationship between the points is not a simple linear relationship so this could be used as an example of a dataset where linear regression is not a great fit, even though R=0.8 and p=0.05.
+
+
+Example Usage
+-------------
+
+### Quantitative relationship
+
+```{r}
+Biochemical_Oxygen_Demand %>%
+  ggplot(aes(x=Time, y=Demand)) +
+  geom_line(size=1) +
+  geom_point(colour="red2", size=6) +
+  ggtitle("Biochemical Oxygen Demand")
+```
+
+### Linear regression
+
+```{r}
+lm(Demand~Time, Biochemical_Oxygen_Demand) -> lm_result
+
+lm_result
+```
+
+```{r}
+cor.test(Biochemical_Oxygen_Demand$Demand,Biochemical_Oxygen_Demand$Time)
+```
+
+
+```{r}
+Biochemical_Oxygen_Demand %>%
+  ggplot(aes(x=Time, y=Demand)) +
+  geom_line(size=1, colour="darkgrey") +
+  geom_point(colour="#BB4444", size=4) +
+  ggtitle("Linear Regression of Biochemical Oxygen Demand") +
+  geom_abline(slope = lm_result$coefficients[2], intercept=lm_result$coefficients[1], size=2)
+```

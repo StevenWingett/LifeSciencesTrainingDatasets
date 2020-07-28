@@ -1,0 +1,101 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Biomass_of_Herbivorous_Fish
+===========================
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+
+```{r}
+Training_Data_List %>%
+  filter(startsWith(Data_set_Name,"Herbiverous"))
+```
+
+```{r}
+data("Biomass_of_Herbivorous_Fish")
+Biomass_of_Herbivorous_Fish
+```
+
+
+Suggested Usage
+---------------
+A more complicated, but still small, quantitative dataset with many independent variables and three categorical groups.  The data has some missing values.
+
+Can be used to illustrate grouped colouring, for plotting means with measures of variance.
+
+The deep and shallow mean biomasses show a linear releationship, but are more stable on a log scale
+
+Example Usage
+-------------
+
+### Compare deep and shallow means
+
+```{r}
+Biomass_of_Herbivorous_Fish %>%
+  ggplot(aes(x=Deep.Mean.Biomass, y=Shallow.Mean.Biomass, colour=Morpho.Functional.Group)) +
+  geom_point(size=4) +
+  ggtitle("Comparing Deep and Shallow Biomass") +
+  geom_abline(slope=1,intercept=0)
+```
+
+### Compare deep vs shallow on a log scale
+
+```{r}
+Biomass_of_Herbivorous_Fish %>%
+  ggplot(aes(x=Deep.Mean.Biomass, y=Shallow.Mean.Biomass, colour=Morpho.Functional.Group)) +
+  geom_point(size=4) +
+  ggtitle("Comparing Deep and Shallow Biomass") +
+  geom_abline(slope=1,intercept=0)+
+  scale_x_log10()+
+  scale_y_log10()
+```
+
+
+### Labelling points
+```{r}
+library(ggrepel)
+Biomass_of_Herbivorous_Fish %>%
+  ggplot(aes(x=Deep.Mean.Biomass, y=Shallow.Mean.Biomass, colour=Morpho.Functional.Group, label=Species)) +
+  geom_point(size=4) +
+  ggtitle("Comparing Deep and Shallow Biomass") +
+  geom_abline(slope=1,intercept=0)+
+  geom_text_repel(colour="black")+
+  scale_x_log10()+
+  scale_y_log10()
+
+```
+
+
+### Plotting graphs with error bars
+```{r}
+Biomass_of_Herbivorous_Fish %>%
+  ggplot(aes(
+    x=Species,
+    y=Shallow.Mean.Biomass,
+    ymin=Shallow.Mean.Biomass - Shallow.Standard.Deviation.of.Biomass,
+    ymax=Shallow.Mean.Biomass + Shallow.Standard.Deviation.of.Biomass,
+    fill=Morpho.Functional.Group),
+  ) +
+  geom_col(colour="black") +
+  geom_errorbar(width=0.3) +
+  coord_flip()+
+  scale_fill_brewer(palette="Set1")
+```
+
+
+
+
+

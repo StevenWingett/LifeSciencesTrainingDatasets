@@ -1,0 +1,100 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Bird_Sighting_Texas_2018
+========================
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>%
+  filter(startsWith(Data_set_Name,"Birds Sighted"))
+```
+
+```{r}
+data("Bird_Sighting_Texas_2018")
+head(Bird_Sighting_Texas_2018,n=500)
+```
+
+
+Suggested Usage
+---------------
+A mostly qualitative dataset with several qualitative categories.  Can be used to aggregate multiple variables.  Comes with a text based date with inconsistent date formats which will be difficult to parse into usable quantitative dates.
+
+Some species do not have a common name.
+
+Some entries have neither a common name nor a taxon species name
+
+
+
+
+Example Usage
+-------------
+
+### Different birds ever seen
+
+```{r}
+Bird_Sighting_Texas_2018 %>%
+  distinct(common_name, .keep_all = TRUE) %>%
+  select(-observed_on_string) %>%
+  arrange(common_name)
+```
+
+### List of frequency of observation
+
+```{r}
+Bird_Sighting_Texas_2018 %>%
+  group_by(common_name,taxon_species_name) %>%
+  count() %>%
+  arrange(desc(n))
+```
+### Make single name
+
+```{r}
+Bird_Sighting_Texas_2018 %>%
+  filter(nchar(taxon_species_name) > 0) %>%
+  mutate(has_common_name = nchar(common_name)>0) %>%
+  group_by(has_common_name) %>%
+  mutate(full_name=if_else(has_common_name,paste0(taxon_species_name," (",common_name,")"),taxon_species_name)) %>%
+  ungroup() %>%
+  select(full_name, common_name, taxon_species_name, everything()) -> Bird_Sighting_Texas_2018
+
+head(Bird_Sighting_Texas_2018)
+```
+
+### Graph of frequency of observation
+```{r}
+set.seed(746)
+Bird_Sighting_Texas_2018 %>%
+  group_by(full_name) %>%
+  count() %>%
+  ungroup() %>%
+  mutate(has_name=str_detect(full_name,"\\("))%>%
+  group_by(has_name) %>%
+  slice_sample(n=5) %>%
+  ungroup()%>%
+  arrange(n) %>%
+  mutate(full_name=factor(full_name, levels=full_name)) %>%
+  ggplot(aes(x=full_name,y=n)) +
+  geom_col() +
+  coord_flip()+
+  ylab("Number of times observed") +
+  xlab(NULL)
+```
+
+### Parsing the dates
+
+Yeah, I should get around to writing this, but it's not going to be pretty...
+

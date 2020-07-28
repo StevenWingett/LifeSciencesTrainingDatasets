@@ -1,0 +1,52 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Cuttlefish_Buoyancy
+===================
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>%
+  filter(startsWith(Data_set_Name,"Cuttlefish"))
+```
+
+
+```{r}
+data("Cuttlefish_Buoyancy")
+Cuttlefish_Buoyancy
+```
+
+Suggested Usage
+---------------
+A small dataset but with many quantitative measurements and a few potential confounding factors.  Gives lots of opportunity to explore the relationships between measurements and which factors have relevant influence.
+
+
+
+Example Usage
+-------------
+
+### Plotting multiple variables
+
+```{r}
+Cuttlefish_Buoyancy %>%
+  ggplot(aes(x=treatment, y=weight,colour=treatment)) +
+  stat_summary(geom="errorbar", fun = mean, fun.min = mean, fun.max=mean, size=2, colour="black") +
+  geom_jitter(height=0, width=0.3) +
+  facet_wrap(vars(color))
+```
+
+
+

@@ -1,0 +1,84 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Brain_Bodyweight
+================
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>%
+  filter(Data_set_Name=="Brain-Bodyweight Correlation")
+```
+
+```{r}
+data("Brain_Bodyweight")
+Brain_Bodyweight
+```
+
+Suggested Usage
+---------------
+This dataset illustrates the positive correlation between brainweight and bodyweight over a large number of species.
+
+The relationship is roughly linear on a log scale.  Log transformed versions of the quantitative variables are provided but could also be calculated from the linear values.
+
+The animals are grouped into Categories - the extinct animals have notably smaller brains for their bodyweight size.  This could be used to filter these samples, or to show that they are a significantly distinct group.
+
+
+Example Usage
+-------------
+
+### Relationship on a linear scale
+
+```{r}
+Brain_Bodyweight %>%
+  ggplot(aes(x=Brain.weight.g, y=Body.weight.kg, colour=Category)) +
+  geom_point()
+```
+
+### Relationship on a log scale
+
+```{r}
+Brain_Bodyweight %>%
+  ggplot(aes(x=log.brain.weight.g, y=Log.body.weight.kg, colour=Category)) +
+  geom_point()
+```
+
+### Removing the extinct species
+
+```{r}
+Brain_Bodyweight %>%
+  filter(Category != "Extinct") %>%
+  ggplot(aes(x=log.brain.weight.g, y=Log.body.weight.kg, colour=Category)) +
+  geom_point()
+```
+
+### Improved correlation without extinct
+
+```{r}
+cor.test(Brain_Bodyweight$Log.body.weight.kg, Brain_Bodyweight$log.brain.weight.g)
+```
+
+```{r}
+Brain_Bodyweight %>%
+  filter(Category != "Extinct") -> Brain_Bodyweight_No_Extinct
+
+cor.test(Brain_Bodyweight_No_Extinct$Log.body.weight.kg, Brain_Bodyweight_No_Extinct$log.brain.weight.g)
+```
+
+
+
+
+

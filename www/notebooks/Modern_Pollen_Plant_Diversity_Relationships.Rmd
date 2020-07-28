@@ -1,0 +1,121 @@
+---
+title: "Life Sciences Training Data"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+Modern_Pollen_Plant_Diversity_Relationships
+===========================================
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>%
+  filter(startsWith(Data_set_Name,"Modern"))
+```
+
+
+```{r}
+data("Modern_Pollen_Plant_Diversity_Relationships")
+Modern_Pollen_Plant_Diversity_Relationships
+```
+
+Suggested Usage
+---------------
+A dataset with lots of different quantitative variables with complex relationships.  Contains some genetic information as well as environmental and biological measures.
+
+Several fields have missing values
+
+
+Example Usage
+-------------
+
+### Tidy names
+```{r}
+str_replace(colnames(Modern_Pollen_Plant_Diversity_Relationships),"\\..*","") -> colnames(Modern_Pollen_Plant_Diversity_Relationships)
+```
+
+### Plot distributions
+```{r}
+Modern_Pollen_Plant_Diversity_Relationships %>%
+  select(-Growth) %>%
+  pivot_longer(cols=-Pollen, names_to="variable", values_to="value") %>%
+  group_by(variable) %>%
+  mutate(value=(value-min(value,na.rm = TRUE))/(max(value,na.rm=TRUE)-min(value,na.rm=TRUE))) %>%
+  ungroup() %>%
+  ggplot(aes(x=variable,y=value)) +
+  geom_jitter(height=0, width=0.1) +
+  ggtitle("Raw scaled distribtions")
+```
+
+### Plot disitributions after log transforming variables
+
+```{r fig.width=9, fig.height=5}
+Modern_Pollen_Plant_Diversity_Relationships %>%
+  mutate(Seed=log2(Seed+0.1),SNPS=log2(SNPS+1)) %>%
+  pivot_longer(cols=c(-Pollen,-Growth), names_to="variable", values_to="value") %>%
+  group_by(variable) %>%
+  mutate(value=(value-min(value,na.rm = TRUE))/(max(value,na.rm=TRUE)-min(value,na.rm=TRUE))) %>%
+  ungroup() %>%
+  ggplot(aes(x=variable,y=value, colour=Growth)) +
+  geom_jitter(height=0, width=0.1) +
+  ggtitle("Transformed scaled distribtions")
+```
+
+
+```{r}
+Modern_Pollen_Plant_Diversity_Relationships %>%
+  mutate(Seed=log2(Seed+0.1),SNPS=log2(SNPS+1)) -> Modern_Pollen_Plant_Diversity_Relationships
+```
+
+### Plot all correlations
+
+```{r}
+library(corrr)
+Modern_Pollen_Plant_Diversity_Relationships %>%
+  select(Seed:N) %>%
+  correlate() %>%
+  rplot()
+
+```
+
+### Look at a positive correlation
+
+```{r}
+lm(LDMC~Height,Modern_Pollen_Plant_Diversity_Relationships) -> ld_height_lm
+
+ld_height_lm
+```
+
+
+```{r fig.height=6, fig.width=8}
+Modern_Pollen_Plant_Diversity_Relationships %>%
+  ggplot(aes(x=Height, y=LDMC, colour=Growth)) +
+  geom_point() +
+  geom_abline(intercept = ld_height_lm$coefficients[1], slope=ld_height_lm$coefficients[2], size=2, colour="red2")
+```
+
+### Look at negative correlation
+
+```{r}
+lm(LDMC~SLA,Modern_Pollen_Plant_Diversity_Relationships) -> ld_sla_lm
+
+ld_sla_lm
+```
+
+
+```{r fig.height=6, fig.width=8}
+Modern_Pollen_Plant_Diversity_Relationships %>%
+  ggplot(aes(y=LDMC, x=SLA, colour=Growth)) +
+  geom_point() +
+  geom_abline(intercept = ld_sla_lm$coefficients[1], slope=ld_sla_lm$coefficients[2], size=2, colour="red2")
+```
