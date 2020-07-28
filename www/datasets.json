@@ -3,8 +3,23 @@
         "title": "Biochemical Oxygen Demand",
         "file": "Biochemical_Oxygen_Demand.html",
         "summary": "A small quantitative dataset of oxygen usage in microbes",
-        "tags": "small,quantitative,correlation,time",
+        "tags": "small,quant,corr,time",
+        "date": "2020-07-28"
+    },
+    {
+        "title": "Biomass of Herbiverous Fish",
+        "file": "Biomass_of_Herbivorous_Fish.html",
+        "summary": "Data on the biomass of deep and shallow Abobrinha Reef fish.  Has 3 categorical groups and many independent quantitative variables, some of which have missing values.",
+        "tags": "small,quant,categ,NA,log,repl",
+        "date": "2020-07-28"
+    },
+    {
+        "title": "Bird Sightings in Texas",
+        "file": "Bird_Sighting_Texas_2018.html",
+        "summary": "A raw set of categorical timed observations of bird species. Requires summarisation and is annotated to different levels.  Contains timestamps writting in varying formats which are challenging to parse.",
+        "tags": "categ,time,NA,problem",
         "date": "2020-07-28"
     }
+
    
 ]

@@ -23,7 +23,7 @@ div {
     padding-left: 1em;
     padding-bottom: 0.5em;
     margin-bottom: 0;
-    background-image: url("../images/raw_reads.png");
+    background-image: url("../images/training_room.png");
     background-size: cover;
 }
 
@@ -53,10 +53,14 @@ div {
 
 /*  THe header */
 #header h1 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 300%;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 250%;
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+#header a {
+    color: white;
 }
 
 /* The dataset iframe */
