@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial';font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+/* The main divs forming the structure of the page */
+div {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#header {
+    background-color: #369;
+    color: white;
+    padding:0.1em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+    background-image: url("../images/raw_reads.png");
+    background-size: cover;
+}
+
+#filter {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#datasets {
+    grid-column: 1;
+    grid-row:2;
+}
+
+#dataset {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#helpcontent {
+    display:none; 
+    font-size: 80%;
+    background-color: #DDD;
+    margin-top: 0;
+    padding: 0.5em;
+}
+
+/*  THe header */
+#header h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 300%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* The dataset iframe */
+#datasettarget {
+    width: 100%;
+    height: 100%;
+    display: none; /* This will be shown when the first dataset is selected */
+}
+
+#initialdataset {
+    text-align: center;
+    color: #777;
+    padding-top: 5em;
+}
+
+/* Some general classes */
+.small {
+    font-size: 70%;
+}
+
+h2 {
+    font-size: 120%;
+    text-align: center;
+    margin: 0.2em;
+}
+
+
+/* The filter section */
+#filterlist {
+    list-style: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 0.6em;
+    padding-left: 1em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#filterlist li {
+    padding: 0.2em;
+    margin-bottom: 0.2em;
+    margin-right:0.2em;
+    padding-left: 0.5em;
+    padding-right:0.5em;
+    border-radius: 0.3em;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #DDD;
+}
+
+#filterlist li:hover {
+    background-color: #EAA;
+}
+
+#filterlist li.selected {
+    background-color: #E00;
+    color: white;
+}
+
+#filter input {
+    width: 80%;
+    margin-left: 10%;
+    text-align:center;
+}
+
+
+
+/* The summary statements for each dataset */
+
+div.summary {
+    padding: 0.5em;
+    background-color: #EEE;
+    margin-bottom: 0.5em;
+}
+
+div.summary:hover {
+    background-color: #EAA;
+    cursor: pointer;
+}
+
+div.summary h1 {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+div.summary p {
+    font-size: 0.7em;
+}
+
+div.summary p.tags {
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+}

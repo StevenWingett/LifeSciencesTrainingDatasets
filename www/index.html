@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Life Sciences Training Datasets</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- This is the header at the top of the page -->
+    <div id="header">
+        <h1>Life Sciences Training Datasets</h1>
+        <p class="small">A collection of datasets for life sciences training courses</p>
+        <button id="showhelp">About</button>
+    </div>
+    <div id="helpcontent">
+        <p>
+            This is the hidden content...
+        </p>
+    </div>
+
+    <!-- This is the main content div which gets restructured when the viewport changes -->
+    <div id="main">
+
+        <!-- This is the div containing the filtering options so we don't see everything all the time -->
+        <div id="filter">
+            <h2>Filters</h2>
+            <input type="text" id="textsearch" placeholder="Type search term here"></input>
+            <ul id="filterlist">
+
+            </ul>
+
+        </div>
+
+        <!-- This is the list of datasets -->
+        <div id="datasets">
+            <h2>Data Sets</h2>
+            <!-- The datasets will show up as individaul items in here.  They are populated by js-->
+        </div>
+
+
+        <!-- This is where the selected vistory shows up -->
+        <div id="dataset">
+
+            <p id="initialdataset">Select a dataset on the left and it will appear here</p> 
+            <iframe id="datasettarget" src="" frameborder="0"></iframe>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
