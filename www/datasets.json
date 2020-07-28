@@ -19,6 +19,62 @@
         "summary": "A raw set of categorical timed observations of bird species. Requires summarisation and is annotated to different levels.  Contains timestamps writting in varying formats which are challenging to parse.",
         "tags": "categ,time,NA,problem",
         "date": "2020-07-28"
+    },
+    {
+        "title": "Brain Bodyweight",
+        "file": "Brain_Bodyweight.html",
+        "summary": "A set of brainweight vs bodyweight measures for different species.  Includes extinct species which don't correlate well with contemporary animals.",
+        "tags": "small,categ,quant,log,corr",
+        "date": "2020-07-28"
+    },
+    {
+        "title": "Child Variants",
+        "file": "Child_Variants.html",
+        "summary": "Genomic variants from a clinical study.  Has numerous opportunites for filtering and quantitative exploration.",
+        "tags": "categ,quant,log,corr",
+        "date": "2020-07-28"
+    },
+    {
+        "title": "Childrens Hobbies During Lockdown",
+        "file": "Childrens_Hobbies_During_Lockdown.html",
+        "summary": "A pair of datasets quantitating different activities (indoor and outdoor) which can be merged together. Some problems with the calculation of annotated percentage values",
+        "tags": "categ,quant,problem,merge",
+        "date": "2020-07-28"
+    },
+    {
+        "title": "Cuttlefish Buoyancy",
+        "file": "Cuttlefish_Buoyancy.html",
+        "summary": "Testing the effect of ocean acidification and feeding on cuttlefish buoyancy. A small dataset but with many quantitative measurements and a few potential confounding factors. Gives lots of opportunity to explore the relationships between measurements and which factors have relevant influence.",
+        "tags": "small,categ,quant,time,corr",
+        "date": "2020-07-28"
+    },
+    {
+        "title": "Modern Pollen Plant Diversity Relationships",
+        "file": "Modern_Pollen_Plant_Diversity_Relationships.html",
+        "summary": "Looking at the evolutionary histories of woodland and herbacious plants.  A dataset with lots of different quantitative variables with complex relationships. Long field names can be shortende.  Contains some genetic information as well as environmental and biological measures",
+        "tags": "small,categ,quant,NA,corr,log",
+        "date": "2020-07-28"
+    },
+    {
+        "title": "Neutrophils",
+        "file": "Neutrophils.html",
+        "summary": "White blood cell levels in response to stimulus with different chemicals.  A very small simple quantitative dataset containing unparied replicates and no additional annotation.  Useful for initial quantitative data exploration and plotting.",
+        "tags": "small,quant,NA,repl",
+        "date": "2020-07-28"
+    },
+    {
+        "title": "Plant CO2 Uptake",
+        "file": "Plant_CO2_Uptake.html",
+        "summary": "Measuring the amount of CO2 uptake from different plant species at different temperatures. A small complete dataset with a couple of relevant factors.",
+        "tags": "small,quant,categ",
+        "date": "2020-07-28"
+    },
+    {
+        "title": "Sleep Deprivation CSD",
+        "file": "Sleep_Deprivation_CSD.html",
+        "summary": "Measuring the effect of sleep deprevation on migraine induction and Cortical Spreading Depolaraisation in rats. Has an inappropriate mean calculation which generates huge standard deviations.",
+        "tags": "small,quant,categ,problem",
+        "date": "2020-07-28"
     }
 
    

@@ -112,11 +112,11 @@ h2 {
 }
 
 #filterlist li:hover {
-    background-color: #EAA;
+    background-color: #AAE;
 }
 
 #filterlist li.selected {
-    background-color: #E00;
+    background-color: #00E;
     color: white;
 }
 
@@ -137,7 +137,7 @@ div.summary {
 }
 
 div.summary:hover {
-    background-color: #EAA;
+    background-color: #AAE;
     cursor: pointer;
 }
 
