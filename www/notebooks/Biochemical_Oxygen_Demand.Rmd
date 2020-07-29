@@ -4,8 +4,13 @@ output:
   html_document:
     df_print: paged
     toc: true
-    toc_float: true
+    css: "trainingdata.css"
 ---
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align="center")
+```
+
 
 Biochemical_Oxygen_Demand
 =========================

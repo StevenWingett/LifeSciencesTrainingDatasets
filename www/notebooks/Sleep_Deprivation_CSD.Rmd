@@ -1,14 +1,16 @@
 ---
-title: "Life Sciences Training Data"
+title: "Sleep_Deprivation_CSD"
 output:
   html_document:
     df_print: paged
     toc: true
-    toc_float: true
+    css: "trainingdata.css"
 ---
 
-Sleep_Deprivation_CSD
-=====================
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align="center")
+```
+
 
 ```{r message=FALSE}
 library(Trainingdata)
