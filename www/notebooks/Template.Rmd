@@ -1,0 +1,44 @@
+---
+title: "***DataSet Name Goes Here***"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    css: "trainingdata.css"
+---
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align="center")
+```
+
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+#Training_Data_List %>%
+#  filter(str_detect(Data_set_Name,"*** SOME SUITABLE TERM ***"))
+```
+
+
+```{r}
+#data("***DataSet Name Goes Here***")
+#***DataSet Name Goes Here***
+```
+
+Suggested Usage
+---------------
+Describe the main facets of the data.  
+
+
+
+
+Example Usage
+-------------
+Show some figures from the data and maybe suitable filters or transformations.
+

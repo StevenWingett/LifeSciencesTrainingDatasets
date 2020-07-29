@@ -1,0 +1,16 @@
+#TOC {
+  font-size: 150%;
+}
+#TOC a {
+  color: black;
+}
+
+h1,h2 {
+  color: #336699;
+  font-weight: bold;
+}
+
+pre {
+  margin-top: 2em;
+  
+}
