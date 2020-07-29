@@ -1,0 +1,78 @@
+---
+title: "Plant CO2 Uptake"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    css: "trainingdata.css"
+---
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align="center")
+```
+
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>%
+  filter(str_detect(Data_set_Name,"CO2"))
+```
+
+
+```{r}
+data("Plant_CO2_Uptake")
+Plant_CO2_Uptake
+```
+
+Suggested Usage
+---------------
+A concentration gradient linked to a quantitative uptake variable.  Categorical linkage to plants, types and whether they were chilled or not.  A nice dataset to show linked data (plant) with other possible confounding factors.  Could also be used to do curve fitting.
+
+
+
+
+Example Usage
+-------------
+
+### Line graphs of major factors
+```{r}
+Plant_CO2_Uptake %>%
+  ggplot(aes(x=conc,y=uptake, group=Plant, colour=Treatment)) +
+  geom_line() +
+  facet_wrap(vars(Type))
+```
+
+### Normalisation to lowest concentration
+
+```{r}
+Plant_CO2_Uptake %>%
+  group_by(Plant) %>%
+  mutate(norm_uptake=uptake-uptake[conc==95]) -> Plant_CO2_Uptake
+
+Plant_CO2_Uptake
+```
+```{r}
+Plant_CO2_Uptake %>%
+  ggplot(aes(x=conc,y=norm_uptake, group=Plant, colour=Treatment)) +
+  geom_line() +
+  facet_wrap(vars(Type))
+```
+
+### Comparison at end points
+
+```{r}
+Plant_CO2_Uptake %>%
+  filter(conc == max(conc)) %>%
+  ggplot(aes(x=Type,y=norm_uptake, colour=Treatment)) +
+  geom_jitter(size=4, height=0,width=0.3) +
+  stat_summary(geom="errorbar", width=0.3, size=1)
+```
+
+
