@@ -1,5 +1,5 @@
 ---
-title: "Life Sciences Training Data"
+title: "Child Variants"
 output:
   html_document:
     df_print: paged
@@ -10,10 +10,6 @@ output:
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 ```
-
-
-Child_Variants
-==============
 
 ```{r message=FALSE}
 library(Trainingdata)

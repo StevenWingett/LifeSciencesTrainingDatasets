@@ -1,5 +1,5 @@
 ---
-title: "Life Sciences Training Data"
+title: "Modern Pollen Plant Diversity Relationships"
 output:
   html_document:
     df_print: paged
@@ -11,9 +11,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 ```
 
-
-Modern_Pollen_Plant_Diversity_Relationships
-===========================================
 
 ```{r message=FALSE}
 library(Trainingdata)

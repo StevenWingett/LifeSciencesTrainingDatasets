@@ -1,5 +1,5 @@
 ---
-title: "Life Sciences Training Data"
+title: "Bird Sighting Texas 2018"
 output:
   html_document:
     df_print: paged
@@ -11,9 +11,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 ```
 
-
-Bird_Sighting_Texas_2018
-========================
 
 ```{r message=FALSE}
 library(Trainingdata)

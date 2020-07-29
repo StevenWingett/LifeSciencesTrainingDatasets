@@ -1,5 +1,5 @@
 ---
-title: "Life Sciences Training Data"
+title: "Cuttlefish Buoyancy"
 output:
   html_document:
     df_print: paged
@@ -11,9 +11,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 ```
 
-
-Cuttlefish_Buoyancy
-===================
 
 ```{r message=FALSE}
 library(Trainingdata)
