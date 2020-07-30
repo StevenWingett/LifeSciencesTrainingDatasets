@@ -1,4 +1,4 @@
-Species	Category	Body.weight.kg	Brain.weight.g	Log.body.weight.kg	log.brain.weight.g
+Species	Category	Body.Weight.kg	Brain.Weight.g	Log.Brain.Weight.g	Log.Body.Weight.kg
 Cow	Domesticated	465	423	8.724513853	8.861086906
 Grey Wolf	Wild	36.33	119.5	6.900866808	5.183089461
 Goat	Domesticated	27.66	115	6.845490051	4.789729251
