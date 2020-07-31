@@ -46,7 +46,7 @@ Example Usage
 
 ```{r}
 Brain_Bodyweight %>%
-  ggplot(aes(x=Brain.weight.g, y=Body.weight.kg, colour=Category)) +
+  ggplot(aes(x=Brain.Weight.g, y=Body.Weight.kg, colour=Category)) +
   geom_point()
 ```
 
@@ -54,7 +54,7 @@ Brain_Bodyweight %>%
 
 ```{r}
 Brain_Bodyweight %>%
-  ggplot(aes(x=log.brain.weight.g, y=Log.body.weight.kg, colour=Category)) +
+  ggplot(aes(x=Log.Brain.Weight.g, y=Log.Body.Weight.kg, colour=Category)) +
   geom_point()
 ```
 
@@ -63,21 +63,21 @@ Brain_Bodyweight %>%
 ```{r}
 Brain_Bodyweight %>%
   filter(Category != "Extinct") %>%
-  ggplot(aes(x=log.brain.weight.g, y=Log.body.weight.kg, colour=Category)) +
+  ggplot(aes(x=Log.Brain.Weight.g, y=Log.Body.Weight.kg, colour=Category)) +
   geom_point()
 ```
 
 ### Improved correlation without extinct
 
 ```{r}
-cor.test(Brain_Bodyweight$Log.body.weight.kg, Brain_Bodyweight$log.brain.weight.g)
+cor.test(Brain_Bodyweight$Log.Body.Weight.kg, Brain_Bodyweight$Log.Brain.Weight.g)
 ```
 
 ```{r}
 Brain_Bodyweight %>%
   filter(Category != "Extinct") -> Brain_Bodyweight_No_Extinct
 
-cor.test(Brain_Bodyweight_No_Extinct$Log.body.weight.kg, Brain_Bodyweight_No_Extinct$log.brain.weight.g)
+cor.test(Brain_Bodyweight_No_Extinct$Log.Body.Weight.kg, Brain_Bodyweight_No_Extinct$Log.Brain.Weight.g)
 ```
 
 
