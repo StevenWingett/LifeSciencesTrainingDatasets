@@ -1,7 +1,9 @@
 body {
-    font-family: 'Arial';font-size: 22px;
+    font-family: 'Arial';
+    font-size: 22px;
     padding: 0;
     margin: 0;
+    height: 100vh;
 }
 
 /* The main divs forming the structure of the page */
@@ -14,6 +16,7 @@ div {
 #main {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
 }
 
 #header {
@@ -35,6 +38,7 @@ div {
 #datasets {
     grid-column: 1;
     grid-row:2;
+    overflow: auto;
 }
 
 #dataset {
