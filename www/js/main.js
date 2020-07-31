@@ -124,13 +124,33 @@ let updateFilters = function () {
 }
 
 
+// Dynamically update the height of the body and datasets menu
+function updateHeight(){
 
+    var headerBottom = document.getElementById("header").getBoundingClientRect().bottom;
+    var filterBottom = document.getElementById("filter").getBoundingClientRect().bottom;
+    var mainHeight = $("body").height() - headerBottom - 10 + "px";
+    var datasetsHeight = mainHeight - filterBottom + "px";
+
+    $('#main').css("height", mainHeight);
+    $('#datasets').css("height", datasetsHeight);
+
+}
+
+
+// Update on resizing the window
+window.onresize = function(event){
+
+    updateHeight();
+
+};
 
 
 // Main JQuery load point
 $(document).ready(function () {
 
     loadDatasets();
+    updateHeight();
 
     $("#showhelp").click(function() {
         $("#helpcontent").slideToggle();
@@ -152,6 +172,5 @@ $(document).ready(function () {
         initialURL = "notebooks/"+initialURL;
         showdataset(initialURL)
     }
-
 
 })
