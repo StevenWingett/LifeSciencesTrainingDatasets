@@ -75,7 +75,13 @@
         "summary": "Measuring the effect of sleep deprevation on migraine induction and Cortical Spreading Depolaraisation in rats. Has an inappropriate mean calculation which generates huge standard deviations.",
         "tags": "small,quant,categ,problem",
         "date": "2020-07-28"
+    },
+    {
+        "title": "Trumpton",
+        "file": "trumpton.html",
+        "summary": "A small dataset giving the names, ages, weights and heights for a number of people.  Useful for simple transformation and plotting demonstrations",
+        "tags": "small,quant,corr",
+        "date": "2020-08-14"
     }
 
-   
 ]
