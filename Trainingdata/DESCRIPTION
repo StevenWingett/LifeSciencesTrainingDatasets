@@ -1,11 +1,10 @@
 Package: Trainingdata
 Type: Package
-Title: Collection Of Data Sets for Training
+Title: A Collection Of Life Sciences Data Sets for Training
 Version: 0.1.0
 Author: Casey Brown <caseyjamesbrown@outlook.com>
 Maintainer: Casey Brown <caseyjamesbrown@outlook.com>
-Description: Contains serveral data sets and related scripts that give 
-    the user a collection of examples of different ways to graph data.
+Description: A collection of biological datasets with different properties which can be used for training purposes.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

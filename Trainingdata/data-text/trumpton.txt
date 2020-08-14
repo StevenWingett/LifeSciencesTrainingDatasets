@@ -1,0 +1,8 @@
+LastName	FirstName	Age	Weight	Height
+Hugh	Chris	26	90	175
+Pew	Adam	32	102	183
+Barney	Daniel	18	88	168
+McGrew	Chris	48	97	155
+Cuthbert	Carl	28	91	188
+Dibble	Liam	35	94	145
+Grub	Doug	31	89	164
