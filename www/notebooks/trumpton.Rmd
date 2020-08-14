@@ -1,0 +1,94 @@
+---
+title: "trumpton"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    css: "trainingdata.css"
+---
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align="center")
+```
+
+
+```{r message=FALSE}
+library(Trainingdata)
+library(tidyverse)
+theme_set(theme_bw(base_size=14))
+```
+
+Data
+----
+```{r}
+Training_Data_List %>%
+  filter(str_detect(Data_set_Name,"Trumpton"))
+```
+
+
+```{r}
+data("trumpton")
+trumpton
+```
+
+Suggested Usage
+---------------
+This is a small dataset which is ideal for showing the basics of data manipulation and filtering.  It has some text (character) columns as well as numerical.  There are duplicated names in the FirstName column.  There are relationships you can explore between Age, Weight and Height.
+
+
+
+Example Usage
+-------------
+
+### Simple barplots
+
+```{r}
+trumpton %>%
+  mutate(LastName=factor(LastName, levels=LastName)) %>%
+  ggplot(aes(x=LastName, y=Weight)) +
+  geom_col()
+```
+
+### Relationship between age, weight and height
+
+```{r}
+trumpton %>%
+  ggplot(aes(x=Age, y=Weight, colour=Height,label=LastName)) +
+  geom_point()+
+  geom_text(vjust=1.2) 
+```
+
+
+### Deduplication keeping the youngest Chris
+```{r}
+trumpton %>%
+  arrange(Age) %>%
+  distinct(FirstName, .keep_all = TRUE)
+```
+
+### Calculation of BMI
+```{r}
+trumpton %>%
+  mutate(bmi=Weight/(Height/100)^2) -> trumpton
+
+trumpton
+```
+
+```{r}
+trumpton %>%
+  arrange(bmi) %>%
+  mutate(LastName=factor(LastName,levels=LastName)) %>%
+  mutate(status = case_when(
+    bmi < 18.5 ~ "Underweight",
+    bmi < 26 ~ "Healthy",
+    bmi < 30 ~ "Overweight",
+    TRUE ~ "Obese"
+    )
+  ) %>%
+  ggplot(aes(x=LastName, y=bmi, fill=status)) +
+  geom_col()
+```
+
+
+
+
