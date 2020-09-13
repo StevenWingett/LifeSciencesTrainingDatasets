@@ -2,10 +2,10 @@
 \alias{DinoData}
 \docType{data}
 \title{
-  Dataset of how dinosaur mass varies with femur length
+  Dataset data
 }
 \description{
-  %%  ~~ A concise (1-5 lines) description of the dataset. ~~
+  Dataset of how dinosaur mass varies with femur length
 }
 \usage{data("DinoData")}
 \format{
