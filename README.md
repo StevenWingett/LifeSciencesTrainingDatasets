@@ -13,7 +13,7 @@ Our repository is primarily intended to be used as an R package (named "Training
 
 The package has been divided into 5 separate folders for clear organisation (along with a few other important files in the main folder, essential for the functioning of the R package).
  
- - The **data-raw** folder contains the original data sets before any modifications have been made.
+ - The **data-raw** folder contains the original data sets before any modifications have been made.  If no modifications are needed, then the original data can be placed instead in the data-text folder, described below.
  - The **data-text** folder contains all the data sets in text (.txt) tab-delimited format.  The data may have been edited for simplicity, although the actual data values will remain unaltered.
  - The **data** folder is where the data imported into an R session are stored, in the rdata (.rda) file format.  These .rda files were generated from the tab-delimited files described above.
  - The **man** folder is where the R documentation (.Rd) for each of the datasets is stored.  If you type, for example, the command ```?Child_Variants``` into the R console, it will display the documentation from the corresponding .Rd file.  This will give a description of the data types and data sources.
@@ -38,7 +38,7 @@ The easiest way to install this package is to use the ```devtools``` package in 
 
 ## How to add new datasets to the repository
  
-1) Create a tab-delimited text format version (edited if necessary) of your original dataset.  (This could be a replicate of your original data if no changes are actually needed).
+1) Create a tab-delimited text format version (edited if necessary) of your original dataset. 
 
 2) Write the relevant R scripts (.R) to analyse the new dataset.
 
@@ -49,7 +49,7 @@ Script dependencies: a) the script makes use of raw strings, which requires R ve
  
 When running the script, ensure all the files to be processed are in the Current Working Directory. The script takes the following files as input: 
 
-- Original data file
+- Original data file (only if changes were made to this file in preparation for the analysis)
 
 - Formatted tab-delimited data file
 
