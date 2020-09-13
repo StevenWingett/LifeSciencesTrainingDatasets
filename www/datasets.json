@@ -48,6 +48,13 @@
         "tags": "small,categ,quant,time,corr",
         "date": "2020-07-28"
     },
+      {
+        "title": "Dinosaur sizes",
+        "file": "DinoData.html",
+        "summary": "Dataset of how dinosaur mass varies with femur length.",
+        "tags": "small,categ,quant,corr",
+        "date": "2020-09-12"
+    },
     {
         "title": "Modern Pollen Plant Diversity Relationships",
         "file": "Modern_Pollen_Plant_Diversity_Relationships.html",
