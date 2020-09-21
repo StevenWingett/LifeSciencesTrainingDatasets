@@ -9,8 +9,8 @@ R is a free programming language for statistical computing and graphics. For the
 
 **Installing the Package**
 The easiest way to install this package is to use the ```devtools``` package in R.
-1. Use ```install.packages(devtools)``` to install the devtools package and load it into the library.
-2. ```devtools::install_github('StevenWingett/LifeSciencesTrainingDatasets/Trainingdata)``` will install the package.
+1. Use ```install.packages('devtools')``` to install the devtools package and load it into the library.
+2. ```devtools::install_github('StevenWingett/LifeSciencesTrainingDatasets/Trainingdata')``` will install the package.
 3. ```library(Trainingdata)``` will provide direct access to the datasets
 4. You can use ```Training_Data_List``` to see the data frame of metadata for all of the data sets
 
