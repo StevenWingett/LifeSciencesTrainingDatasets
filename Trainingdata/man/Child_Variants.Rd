@@ -37,12 +37,9 @@ Record of position and content of DNA mutations in children
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
-Two scripts are provided, demonstrating how to perform a simple analysis and produce graphs in:
-
-  base R in R/Child_Variants_Script.R
-
-  Tidyverse in  R/Child_Variants_Tidyverse_Script.R
-
+## Two scripts are provided, demonstrating how to perform a simple analysis and produce graphs in:
+## base R in R/Child_Variants_Script.R
+## Tidyverse in  R/Child_Variants_Tidyverse_Script.R
 
 data(Child_Variants)
 ## maybe str(Child_Variants) ; plot(Child_Variants) ...
